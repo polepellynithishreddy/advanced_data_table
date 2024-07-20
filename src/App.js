@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import DataTable from './DataTable';
+import data from './data.json'; // Make sure to import your dataset
 
 function App() {
   return (
@@ -15,6 +18,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
+           <div className="App">
+      <h1>Data Table</h1>
+      <DataTable data={data} />
+    </div>
           Learn React
         </a>
       </header>
